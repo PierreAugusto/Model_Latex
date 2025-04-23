@@ -1,9 +1,11 @@
 \chapter{\chapternamedatabase}\label{database}
 
-Neste capítulo, apresentamos os dados utilizados neste trabalho, incluindo as fontes de dados fotométricos. Primeiramente, descrevemos o levantamento S-PLUS, suas características e os dados obtidos a partir do seu quarto lançamento de dados (DR4). Em seguida, detalhamos os procedimentos de correção de extinção aplicados às magnitudes fotométricas. Apresentamos também como os dados foram seleiconados para a análise, incluindo os parâmetros utilizados para a fotometria e a seleção de galáxias, magnitudes limites e flags de qualidade
+Neste capítulo, apresentamos os dados utilizados neste trabalho, incluindo as fontes de dados fotométricos. O dados espectroscópicos serão apresentados e discutidos no capítulo 4. 
+
+Primeiramente, descrevemos o levantamento S-PLUS, suas características e os dados obtidos. Em seguida, detalhamos os procedimentos de correção de extinção aplicados às magnitudes fotométricas. Apresentamos também como os dados foram seleiconados para a análise, incluindo os parâmetros utilizados para a fotometria e a seleção de galáxias, magnitudes limites e flags de qualidade.
 
 \section{S-PLUS}
-O Southern Photometric Local Universe Survey (S-PLUS), um levantamento do céu do hemisfério sul, localizado no Cerro Tololo Inter-American Observatory, Chile (CTIO), tem como objetivo observar uma área de 9300 graus quadrados do céu com o telescópio robótico de 80 cm T80-South. Ele disponibiliza 12 filtros fotométricos (Figura \ref{splus_filters}), sendo 5 de banda larga ($u$, $g$, $r$, $z$) e 7 de banda estreita (J0378, J0395, J0410, J0430, J0515, J0660 e J0861).
+O Southern Photometric Local Universe Survey (S-PLUS), um levantamento do céu do hemisfério sul, localizado no Cerro Tololo Inter-American Observatory, Chile (CTIO), tem como objetivo observar uma área de 9300 graus quadrados do céu com o telescópio robótico de 80 cm T80-South \citep{oliveira2019splus}. Ele disponibiliza 12 filtros fotométricos (Figura \ref{splus_filters}), sendo 5 de banda larga ($u$, $g$, $r$, $z$) e 7 de banda estreita (J0378, J0395, J0410, J0430, J0515, J0660 e J0861).
 
 Os dados utilizados neste trabalho foram obtidos a partir do quarto lançamento de dados do S-PLUS (DR4) \citep{herpich2024fourthsplusdatarelease}. O DR4 cobre uma área de 3022,7 graus quadrados, composta por 1629 campos, cada um deles com um campo de visão de aproximadamente 2 graus quadrados. A Figura \ref{footprint_iDR4} mostra a área coberta pelo S-PLUS DR4.
 
@@ -37,14 +39,15 @@ Para este trabalho, escolhemos utilizar as magnitudes baseadas na abertura APER\
     \end{center}
 \end{figure}
 
-\subsection{fotometria de Fornax}\label{sec:Fornax_data}
-Os dados do aglomerado de Fornax foram obtidos a partir da mesma fonte que os dados do S-PLUS, o DR4. Porém, a partir da colaboração de \cite{castelli2024splusfornaxprojectsfp}, utilizamos os dados de \cite{haack2024splusfornaxprojectsfp}, onde foram realizadas novas execuções específicas do SExtractor, identificando o conjunto mais adequado de parâmetros para recuperar o máximo possível de galáxias de Fornax com fotometria confiável e evitando duplicações.
+\subsection{Fotometria de Fornax}\label{sec:Fornax_data}
+Os dados do aglomerado de Fornax foram obtidos a partir da mesma fonte que os dados do S-PLUS, o DR4. Porém, a partir da colaboração de \cite{castelli2024splusfornaxprojectsfp}, utilizamos os dados de \cite{haack2024splusfornaxprojectsfp}, onde foram realizadas novas execuções específicas do SExtractor no DR4, identificando o conjunto mais adequado de parâmetros para recuperar o máximo possível de galáxias de Fornax com fotometria confiável e evitando duplicações.
 
-Os parâmetros da RUN 1 de \cite{haack2024splusfornaxprojectsfp} foram projetados para identificar galáxias fracas e objetos compactos próximos a galáxias mais brilhantes. Por outro lado, os parâmetros da RUN 2 são voltados para uma boa caracterização de galáxias brilhantes e extensas. Assim, para detectar objetos compactos como anãs ultra-compactas (UCDs) ou aglomerados globulares (GCs) perto das galáxias de Fornax, os parâmetros da RUN 1 são mais adequados. Já para caracterizar melhor os objetos mais brilhantes e extensos em Fornax, os parâmetros da RUN 2 são mais eficazes. No nosso caso, usamos os dados da RUN 1.
+Os parâmetros da RUN 1 de \cite{haack2024splusfornaxprojectsfp} foram projetados para identificar galáxias fracas e objetos compactos próximos a galáxias mais brilhantes. Por outro lado, os parâmetros da RUN 2 são voltados para uma boa caracterização de galáxias brilhantes e extensas. Assim, para detectar objetos compactos como anãs ultra-compactas (UCDs) ou aglomerados globulares (GCs) perto das galáxias de Fornax, os parâmetros da RUN 1 são mais adequados. Já para caracterizar melhor os objetos mais brilhantes e extensos em Fornax, os parâmetros da RUN 2 são mais eficazes. No nosso caso, usamos os dados da RUN 1. Assim, todos as magnitudes e parâmetros dos SExtractor que usamos ao lono do trabalho são do RUN 1 de \cite{haack2024splusfornaxprojectsfp}.
+
 
 \subsection{Correção da extinção}\label{sec:Coeficientes_ext}
 
-As magnitudes fornecidas pelo S-PLUS DR4 não estão corrigidas para a extinção interestelar. A poeira galáctica pode afetar significativamente as medições fotométricas, especialmente em áreas do céu com alta densidade de poeira. Para garantir que os dados fotométricos que utilizamos sejam precisos, é necessário aplicar uma correção de extinção.
+As magnitudes utilizadas não estão corrigidas para a extinção interestelar. A poeira galáctica pode afetar significativamente as medições fotométricas, especialmente em áreas do céu com alta densidade de poeira. Para garantir que os dados fotométricos que utilizamos sejam precisos, é necessário aplicar uma correção de extinção.
 
 Através do pacote Python \texttt{dustmaps} \citep{dustmapsGreen2018}, utilizamos o mapa de poeira CSFD \citep{chiang2023correctedsfdaccurategalactic}. O mapa CSFD é uma versão melhorada do mapa de Schlegel-Finkbeiner-Davis (SFD) (\citealt{Schlegel_1998} \& \citealt{Schlafly_2011}), que é comumente utilizado para estimar a extinção em diferentes direções do céu. A correção fornecida pelo CSFD ajuda a reduzir os efeitos da estrutura em larga escala e da contaminação do fundo infravermelho cósmico (CIB). Com esses efeitos removidos, o mapa CSFD fornece um valor mais preciso e confiável da extinção interestelar.
 
@@ -60,25 +63,17 @@ Para garantir a qualidade dos dados fotométricos utilizados neste trabalho, apl
 
 Cortamos nas 12 magnitudes da abertura APER\_6 em magnitudes maiores do que 30, evitando objetos com baixa qualidade de medição e com erros fotométricos altos. Cortamos também em cada uma das mesmas bandas valores de \textit{flag0}$\leq$3, que são objetos com problemas de qualidade de medição.
 
-Na seleção dos objetos utilizados nas próximas seções para a busca de galáxias ultracompactas, adotamos a banda \textit{g\_APER\_6} como referência principal. Aplicamos um corte inferior em \textit{g\_APER\_6}$\geq$13 para excluir objetos muito brilhantes e saturados, garantindo a qualidade das medições. Além disso, estabelecemos um corte superior em \textit{g\_APER\_6}$\leq$21, visando minimizar a contaminação por aglomerados globulares, que possuem magnitudes típicas nesse pico de magnitude. Esses critérios de seleção é adotado vindo de \cite{Cantiello_2020}.
+Na seleção dos objetos utilizados nas próximas seções para a busca de galáxias ultracompactas, adotamos a banda \textit{g\_APER\_6} como referência principal. Aplicamos um corte inferior em \textit{g\_APER\_6}$\geq$13 para excluir objetos muito brilhantes e saturados, garantindo a qualidade das medições. Além disso, estabelecemos um corte superior em \textit{g\_APER\_6}$\leq$21, visando minimizar a contaminação por aglomerados globulares. Esses critérios de seleção vêem de \cite{Cantiello_2020}, que adotam um critério de separação de GCs de UCDs com $M_g=-10.5$, que corresponde $M_v\sim -11mag$ ($\sim10^7 M_\odot$) e uma magnitude aparente de $m_g=21$.
 
 Dos dados do S-PLUS DR4, temos um total de 2900926 objetos. Após a aplicação dos cortes de qualidade, restaram 619630 objetos.
 
-\section{Dados obtidos com o telescópio Gemini Sul}
-O Observatório Gemini é uma instalação astronômica internacional composta por dois telescópios gêmeos: um localizado no hemisfério norte, no Havaí, e outro no hemisfério sul, no Chile. O Gemini South, situado no Chile, é equipado com um espelho primário de 8,1 metros de diâmetro (assim como o Gemini North).
+Das 12 magnitudes utilizadas no S-PLUS na abertura APER\_6 corrigidas, com os cortes descritos anteriormente, apresentamos na Figura \ref{fig:hist_distri_mags_data} as distribuições resultantes.
 
-Para buscar novas galáxias ultracompactas no aglomerado de Fornax, a partir das candidatas identificadas pela metodologia adotada neste trabalho, é necessário realizar confirmações espectroscópicas. Essas confirmações são importantes para verificar se as candidatas são de fato galáxias e se elas estão no redshift do aglomerado de Fornax. Para isso, utilizamos dados espectroscópicos obtidos do GMOS-S, instalado no telescópio Gemini South.
-
-Como parte deste projeto, algumas candidatas preliminares já haviam sido selecionadas em um trabalho de iniciação científica anterior. Nesse contexto, analisamos os dados espectroscópicos dessas candidatas prévias, além de solicitar e analisar novos dados espectroscópicos obtidos para as novas candidatas identificadas neste estudo.
-
-Os dados espectroscópicos foram obtidos através do repositório online do Gemini Observatory\footnote{Gemini Observatory, \textit{Gemini Observatory Archive}, disponível em \url{https://archive.gemini.edu}}. Para a análise das candidatas a galáxias ultracompactas (UCDs) no aglomerado de Fornax, foram utilizadas as seguintes configurações:
-
-\begin{itemize}
-    \item \textbf{Telescópio}: GMOS-S no Gemini South.
-    \item \textbf{Modo de Observação}: Modo de fenda longa.
-    \item \textbf{Gratinete}: B600-G5303 com comprimento de onda central $\lambda_c = 550 \, \text{nm}$ e fenda de 1,500 $\mu\text{m}$.
-    \item \textbf{Intervalo Espectral}: [4000\,\text{Å} - 7000\,\text{Å}]
-    \item \textbf{Resolução}: $R \approx 570$.
-    \item \textbf{Tempo de Exposição}: 1200 segundos por alvo
-    \item \textbf{S/N Desejada}: Mínimo de 5 no continuum (S/N $\sim$ 3 por pixel espectral) e S/N $\sim$ 20 nas linhas de emissão.
-\end{itemize}
+\begin{figure}[!ht]
+    \begin{center}
+    % \setcaptionmargin{1cm}
+    \includegraphics[width=1.0 \columnwidth,angle=0]{hist_distri_mags_data.png}
+    \caption[]{Distribuições de densidade das magnitudes corrigidas para extinção nas 12 bandas fotométricas do S-PLUS (APER\_6) após a aplicação dos cortes de qualidade descritos. As bandas incluem 5 de banda larga ($u$, $g$, $r$, $i$, $z$) e 7 de banda estreita (J0378, J0395, J0410, J0430, J0515, J0660, J0861). Os cortes garantem a seleção de objetos com medições fotométricas confiáveis para a análise.}
+    \label{fig:hist_distri_mags_data}
+    \end{center}
+\end{figure}
