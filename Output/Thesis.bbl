@@ -1,4 +1,4 @@
-\begin{thebibliography}{140}
+\begin{thebibliography}{142}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -7,6 +7,9 @@
 
 \bibitem[{{Abazajian} et~al.(2003)}]{Abazajian_2003}
 {Abazajian}, K. et~al., \enquote{{The First Data Release of the Sloan Digital Sky Survey}}, \emph{\aj}, vol. 126, no.~4, pp. 2081--2086, 2003. \eprint{astro-ph/0305492}, \urlprefix\url{http://dx.doi.org/10.1086/378165}.
+
+\bibitem[{Aghanim et~al.(2020)}]{Planck_2020}
+Aghanim, N. et~al., \enquote{Planck2018 results: VI. Cosmological parameters}, \emph{Astronomy \&amp; Astrophysics}, vol. 641, p.~A6, 2020, ISSN 1432-0746. \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201833910}.
 
 \bibitem[{{Antonini} et~al.(2015){Antonini}, {Barausse} and {Silk}}]{Antonini_2015}
 {Antonini}, F., {Barausse}, E. and {Silk}, J., \enquote{{The Coevolution of Nuclear Star Clusters, Massive Black Holes, and Their Host Galaxies}}, \emph{\apj}, vol. 812, no.~1, 72, 2015. \eprint{1506.02050}, \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/812/1/72}.
@@ -40,6 +43,9 @@ Bekki, K., Couch, W.~J., Drinkwater, M.~J. and Shioya, Y., \enquote{Galaxy thres
 
 \bibitem[{{Blakeslee} et~al.(2009)}]{Blakeslee_2009}
 {Blakeslee}, J.~P. et~al., \enquote{{The ACS Fornax Cluster Survey. V. Measurement and Recalibration of Surface Brightness Fluctuations and a Precise Value of the Fornax-Virgo Relative Distance}}, \emph{\apj}, vol. 694, no.~1, pp. 556--572, 2009. \eprint{0901.1138}, \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/694/1/556}.
+
+\bibitem[{{Blumenthal} et~al.(1984){Blumenthal}, {Faber}, {Primack} and {Rees}}]{Blumenthal_1984}
+{Blumenthal}, G.~R., {Faber}, S.~M., {Primack}, J.~R. and {Rees}, M.~J., \enquote{{Formation of galaxies and large-scale structure with cold dark matter.}}, \emph{\nat}, vol. 311, pp. 517--525, 1984. \urlprefix\url{http://dx.doi.org/10.1038/311517a0}.
 
 \bibitem[{{B{\"o}ker} et~al.(2002)}]{boker_2002}
 {B{\"o}ker}, T. et~al., \enquote{{A Hubble Space Telescope Census of Nuclear Star Clusters in Late-Type Spiral Galaxies. I. Observations and Image Analysis}}, \emph{\aj}, vol. 123, no.~3, pp. 1389--1410, 2002. \eprint{astro-ph/0112086}, \urlprefix\url{http://dx.doi.org/10.1086/339025}.
