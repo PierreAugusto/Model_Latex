@@ -1,4 +1,4 @@
-\begin{thebibliography}{142}
+\begin{thebibliography}{150}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -32,6 +32,9 @@ Aghanim, N. et~al., \enquote{Planck2018 results: VI. Cosmological parameters}, \
 \bibitem[{{Baumgardt} and {Mieske}(2008)}]{Baumgardt_2008}
 {Baumgardt}, H. and {Mieske}, S., \enquote{{High mass-to-light ratios of ultra-compact dwarf galaxies - evidence for dark matter?}}, \emph{\mnras}, vol. 391, no.~2, pp. 942--948, 2008. \eprint{0809.2783}, \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2008.13949.x}.
 
+\bibitem[{Bekki(2008)}]{Bekki_2008}
+Bekki, K., \enquote{Formation of Blue Compact Dwarf Galaxies from Merging and Interacting Gas-Rich Dwarfs}, \emph{Monthly Notices of the Royal Astronomical Society: Letters}, vol. 388, no.~1, pp. L10--L14, 2008, ISSN 1745-3925. \urlprefix\url{http://dx.doi.org/10.1111/j.1745-3933.2008.00489.x}.
+
 \bibitem[{{Bekki} et~al.(2001){Bekki}, {Couch} and {Drinkwater}}]{Bekki_2001}
 {Bekki}, K., {Couch}, W.~J. and {Drinkwater}, M.~J., \enquote{{Galaxy Threshing and the Formation of Ultracompact Dwarf Galaxies}}, \emph{\apjl}, vol. 552, no.~2, pp. L105--L108, 2001. \eprint{astro-ph/0106402}, \urlprefix\url{http://dx.doi.org/10.1086/320339}.
 
@@ -44,17 +47,23 @@ Bekki, K., Couch, W.~J., Drinkwater, M.~J. and Shioya, Y., \enquote{Galaxy thres
 \bibitem[{{Blakeslee} et~al.(2009)}]{Blakeslee_2009}
 {Blakeslee}, J.~P. et~al., \enquote{{The ACS Fornax Cluster Survey. V. Measurement and Recalibration of Surface Brightness Fluctuations and a Precise Value of the Fornax-Virgo Relative Distance}}, \emph{\apj}, vol. 694, no.~1, pp. 556--572, 2009. \eprint{0901.1138}, \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/694/1/556}.
 
-\bibitem[{{Blumenthal} et~al.(1984){Blumenthal}, {Faber}, {Primack} and {Rees}}]{Blumenthal_1984}
-{Blumenthal}, G.~R., {Faber}, S.~M., {Primack}, J.~R. and {Rees}, M.~J., \enquote{{Formation of galaxies and large-scale structure with cold dark matter.}}, \emph{\nat}, vol. 311, pp. 517--525, 1984. \urlprefix\url{http://dx.doi.org/10.1038/311517a0}.
+\bibitem[{Blumenthal et~al.(1984)Blumenthal, Faber, Primack and Rees}]{Blumenthal_1984}
+Blumenthal, G.~R., Faber, S.~M., Primack, J.~R. and Rees, M.~J., \enquote{Formation of galaxies and large-scale structure with cold dark matter}, \emph{Nature}, vol. 311, pp. 517--525, 1984. \urlprefix\url{http://dx.doi.org/10.1038/311517a0}.
 
 \bibitem[{{B{\"o}ker} et~al.(2002)}]{boker_2002}
 {B{\"o}ker}, T. et~al., \enquote{{A Hubble Space Telescope Census of Nuclear Star Clusters in Late-Type Spiral Galaxies. I. Observations and Image Analysis}}, \emph{\aj}, vol. 123, no.~3, pp. 1389--1410, 2002. \eprint{astro-ph/0112086}, \urlprefix\url{http://dx.doi.org/10.1086/339025}.
+
+\bibitem[{Bolzonella et~al.(2000)Bolzonella, Miralles and Pell{\'o}}]{Bolzonella_2000}
+Bolzonella, M., Miralles, J.-M. and Pell{\'o}, R., \enquote{Photometric redshifts based on standard SED fitting procedures}, \emph{Astronomy \& Astrophysics}, vol. 363, pp. 476--492, 2000. \eprint{astro-ph/0003380}, \urlprefix\url{http://dx.doi.org/10.48550/arXiv.astro-ph/0003380}.
 
 \bibitem[{Boylan-Kolchin et~al.(2011)Boylan-Kolchin, Bullock and Kaplinghat}]{Boylan_Kolchin_2011}
 Boylan-Kolchin, M., Bullock, J.~S. and Kaplinghat, M., \enquote{Too big to fail? The puzzling darkness of massive Milky Way subhaloes}, \emph{Monthly Notices of the Royal Astronomical Society: Letters}, vol. 415, no.~1, p. L40–L44, 2011, ISSN 1745-3925. \urlprefix\url{http://dx.doi.org/10.1111/j.1745-3933.2011.01074.x}.
 
 \bibitem[{Brüns and Kroupa(2012)}]{Br_ns_2012}
 Brüns, R.~C. and Kroupa, P., \enquote{A catalog of extended clusters and ultra-compact dwarf galaxies: An analysis of their parameters in early- and late-type galaxies}, \emph{Astronomy \&; Astrophysics}, vol. 547, p. A65, 2012, ISSN 1432-0746. \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201219693}.
+
+\bibitem[{Brüns et~al.(2011)Brüns, Kroupa, Fellhauer, Metz and Assmann}]{Br_ns_2011}
+Brüns, R.~C., Kroupa, P., Fellhauer, M., Metz, M. and Assmann, P., \enquote{A parametric study on the formation of extended star clusters and ultra-compact dwarf galaxies}, \emph{Astronomy \&amp; Astrophysics}, vol. 529, p. A138, 2011, ISSN 1432-0746. \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201016220}.
 
 \bibitem[{{Cantiello} et~al.(2020)}]{Cantiello_2020}
 {Cantiello}, M. et~al., \enquote{{The Fornax Deep Survey with VST. IX. Catalog of sources in the FDS area with an example study for globular clusters and background galaxies}}, \emph{\aap}, vol. 639, A136, 2020. \eprint{2005.12085}, \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/202038137}.
@@ -68,11 +77,17 @@ Cardoso, N.~M., \enquote{AstroInspect: Web-based visual inspection tool}, , 2022
 \bibitem[{{Carollo} et~al.(1997){Carollo}, {Danziger}, {Rich} and {Chen}}]{Carollo_1997}
 {Carollo}, C.~M., {Danziger}, I.~J., {Rich}, R.~M. and {Chen}, X., \enquote{{Nuclear Properties of Kinematically Distinct Cores}}, \emph{\apj}, vol. 491, no.~2, pp. 545--560, 1997. \urlprefix\url{http://dx.doi.org/10.1086/304979}.
 
+\bibitem[{Carrasco~Kind and Brunner(2013)}]{Carrasco_2013}
+Carrasco~Kind, M. and Brunner, R.~J., \enquote{TPZ: photometric redshift PDFs and ancillary information by using prediction trees and random forests}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 432, no.~2, pp. 1483--1501, 2013. \eprint{1303.7269}, \urlprefix\url{http://dx.doi.org/10.1093/mnras/stt574}.
+
 \bibitem[{Castelli et~al.(2024)}]{castelli2024splusfornaxprojectsfp}
 Castelli, A. V.~S. et~al., \enquote{The S-PLUS Fornax Project (S+FP): A first 12-band glimpse of the Fornax galaxy cluster}, , 2024. \eprint{2403.10697}, \urlprefix\url{https://arxiv.org/abs/2403.10697}.
 
 \bibitem[{Chiang(2023)}]{chiang2023correctedsfdaccurategalactic}
 Chiang, Y.-K., \enquote{Corrected SFD: A More Accurate Galactic Dust Map with Minimal Extragalactic Contamination}, , 2023. \eprint{2306.03926}, \urlprefix\url{https://arxiv.org/abs/2306.03926}.
+
+\bibitem[{Chilingarian et~al.(2011)Chilingarian, Mieske, Hilker and Infante}]{Chilingarian_2011}
+Chilingarian, I.~V., Mieske, S., Hilker, M. and Infante, L., \enquote{Dynamical versus stellar masses of ultracompact dwarf galaxies in the Fornax cluster}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 412, no.~3, pp. 1627--1638, 2011. \eprint{1011.1852}, \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2010.18000.x}.
 
 \bibitem[{Collaboration(2024)}]{splus_DR4_footprint}
 Collaboration, S.-P., \enquote{S-PLUS Data Release 4 Documentation}, \url{https://splus.cloud/documentation/DR4}, 2024. Acesso em: agosto de 2024.
@@ -170,11 +185,11 @@ Georgiev, I.~Y., Böker, T., Leigh, N., Lützgendorf, N. and Neumayer, N., \enqu
 \bibitem[{Goerdt et~al.(2008)}]{Goerdt_2008}
 Goerdt, T. et~al., \enquote{The formation of ultra-compact dwarf galaxies and nucleated dwarf galaxies}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 385, no.~4, p. 2136–2142, 2008, ISSN 1365-2966. \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2008.12982.x}.
 
+\bibitem[{Gorecki et~al.(2014)}]{Gorecki_2014}
+Gorecki, A. et~al., \enquote{A new method to improve photometric redshift reconstruction. Applications to the Large Synoptic Survey Telescope}, \emph{Astronomy \& Astrophysics}, vol. 561, A128, 2014. \eprint{1301.3010}, \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201321102}.
+
 \bibitem[{{Graham} and {Guzm{\'a}n}(2003)}]{Graham_2003}
 {Graham}, A.~W. and {Guzm{\'a}n}, R., \enquote{{HST Photometry of Dwarf Elliptical Galaxies in Coma, and an Explanation for the Alleged Structural Dichotomy between Dwarf and Bright Elliptical Galaxies}}, \emph{\aj}, vol. 125, no.~6, pp. 2936--2950, 2003. \eprint{astro-ph/0303391}, \urlprefix\url{http://dx.doi.org/10.1086/374992}.
-
-\bibitem[{{Graham} and {Scott}(2015)}]{Graham_2015}
-{Graham}, A.~W. and {Scott}, N., \enquote{{The (Black Hole)-bulge Mass Scaling Relation at Low Masses}}, \emph{\apj}, vol. 798, no.~1, 54, 2015. \eprint{1412.3091}, \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/798/1/54}.
 
 \bibitem[{{Graham} and {Spitler}(2009)}]{Graham_2009}
 {Graham}, A.~W. and {Spitler}, L.~R., \enquote{{Quantifying the coexistence of massive black holes and dense nuclear star clusters}}, \emph{\mnras}, vol. 397, no.~4, pp. 2148--2162, 2009. \eprint{0907.5250}, \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2009.15118.x}.
@@ -205,6 +220,12 @@ Hilker, M. et~al., \enquote{Dynamical masses of ultra-compact dwarf galaxies in 
 
 \bibitem[{{Hubble}(1926)}]{hubble_classification_1926}
 {Hubble}, E.~P., \enquote{{Extragalactic nebulae.}}, \emph{\apj}, vol.~64, pp. 321--369, 1926. \urlprefix\url{http://dx.doi.org/10.1086/143018}.
+
+\bibitem[{Izotov and Thuan(2011)}]{Izotov_2011}
+Izotov, Y.~I. and Thuan, T.~X., \enquote{Near-Infrared Spectroscopy of Five Blue Compact Dwarf Galaxies: II Zw 40, Mrk 71, Mrk 930, Mrk 996, and SBS 0335–052E}, \emph{The Astrophysical Journal}, vol. 734, no.~2, p.~82, 2011, ISSN 1538-4357. \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/734/2/82}.
+
+\bibitem[{Izotov et~al.(2007)Izotov, Thuan and Guseva}]{Izotov_2007}
+Izotov, Y.~I., Thuan, T.~X. and Guseva, N.~G., \enquote{Broad-Line Emission in Low-Metallicity Blue Compact Dwarf Galaxies: Evidence for Stellar Wind, Supernova, and Possible AGN Activity}, \emph{The Astrophysical Journal}, vol. 671, no.~2, pp. 1297--1320, 2007, ISSN 1538-4357. \urlprefix\url{http://dx.doi.org/10.1086/522923}.
 
 \bibitem[{Janz et~al.(2015)}]{Janz_2015}
 Janz, J. et~al., \enquote{The AIMSS Project – III. The stellar populations of compact stellar systems}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 456, no.~1, p. 617–632, 2015, ISSN 1365-2966. \urlprefix\url{http://dx.doi.org/10.1093/mnras/stv2636}.
@@ -251,6 +272,9 @@ Maddox, N. et~al., \enquote{A spectroscopic census of the Fornax cluster and bey
 \bibitem[{{Madrid}(2011)}]{Madrid_2011}
 {Madrid}, J.~P., \enquote{{Ultra-compact Dwarfs in the Fossil Group NGC 1132}}, \emph{\apjl}, vol. 737, no.~1, L13, 2011. \eprint{1106.5804}, \urlprefix\url{http://dx.doi.org/10.1088/2041-8205/737/1/L13}.
 
+\bibitem[{Madrid and Donzelli(2013)}]{Madrid_2013}
+Madrid, J.~P. and Donzelli, C.~J., \enquote{Gemini Spectroscopy of Ultracompact Dwarfs in the Fossil Group NGC 1132}, \emph{The Astrophysical Journal}, vol. 770, no.~2, p. 158, 2013, ISSN 1538-4357. \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/770/2/158}.
+
 \bibitem[{{Masters} et~al.(2010)}]{Masters_2010}
 {Masters}, K.~L. et~al., \enquote{{The Advanced Camera for Surveys Fornax Cluster Survey. VII. Half-light Radii of Globular Clusters in Early-type Galaxies}}, \emph{\apj}, vol. 715, no.~2, pp. 1419--1437, 2010. \eprint{1003.3450}, \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/715/2/1419}.
 
@@ -271,6 +295,9 @@ Mieske, S., Hilker, M. and Infante, L., \enquote{Ultra compact objects in the Fo
 
 \bibitem[{Mieske et~al.(2004)Mieske, Hilker and Infante}]{Mieske_2004}
 Mieske, S., Hilker, M. and Infante, L., \enquote{Fornax compact object survey FCOS: On the nature of Ultra Compact Dwarf galaxies}, \emph{Astronomy \&amp; Astrophysics}, vol. 418, no.~2, p. 445–458, 2004, ISSN 1432-0746. \urlprefix\url{http://dx.doi.org/10.1051/0004-6361:20035723}.
+
+\bibitem[{Mieske et~al.(2006)Mieske, Hilker, Infante and Jordán}]{Mieske_2006}
+Mieske, S., Hilker, M., Infante, L. and Jordán, A., \enquote{Spectroscopic Metallicities for Fornax Ultracompact Dwarf Galaxies, Globular Clusters, and Nucleated Dwarf Elliptical Galaxies}, \emph{The Astronomical Journal}, vol. 131, no.~5, pp. 2442--2451, 2006, ISSN 1538-3881. \urlprefix\url{http://dx.doi.org/10.1086/500583}.
 
 \bibitem[{Mieske et~al.(2007)Mieske, Hilker, Jordán, Infante and Kissler-Patig}]{Mieske_2007}
 Mieske, S., Hilker, M., Jordán, A., Infante, L. and Kissler-Patig, M., \enquote{A search for ultra-compact dwarf galaxies in the Centaurus galaxy cluster}, \emph{A\&A}, vol. 472, no.~1, pp. 111--119, 2007. \urlprefix\url{http://dx.doi.org/10.1051/0004-6361:20077631}.
@@ -341,6 +368,9 @@ Pfeffer, J. and Baumgardt, H., \enquote{Ultra-compact dwarf galaxy formation by 
 \bibitem[{{Rossa} et~al.(2006)}]{Rossa_2006}
 {Rossa}, J. et~al., \enquote{{Hubble Space Telescope STIS Spectra of Nuclear Star Clusters in Spiral Galaxies: Dependence of Age and Mass on Hubble Type}}, \emph{\aj}, vol. 132, no.~3, pp. 1074--1099, 2006. \eprint{astro-ph/0604140}, \urlprefix\url{http://dx.doi.org/10.1086/505968}.
 
+\bibitem[{Sadeh et~al.(2016)Sadeh, Abdalla and Lahav}]{Sadeh_2016}
+Sadeh, I., Abdalla, F.~B. and Lahav, O., \enquote{ANNz2: Photometric Redshift and Probability Distribution Function Estimation using Machine Learning}, \emph{Publications of the Astronomical Society of the Pacific}, vol. 128, no. 968, p. 104502, 2016. \urlprefix\url{http://dx.doi.org/10.1088/1538-3873/128/968/104502}.
+
 \bibitem[{Saifollahi et~al.(2021)}]{Saifollahi_2021}
 Saifollahi, T. et~al., \enquote{Ultra-compact dwarfs beyond the centre of the Fornax galaxy cluster: hints of UCD formation in low-density environments}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 504, no.~3, p. 3580–3609, 2021, ISSN 1365-2966. \urlprefix\url{http://dx.doi.org/10.1093/mnras/stab1118}.
 
@@ -365,17 +395,8 @@ Schlegel, D.~J., Finkbeiner, D.~P. and Davis, M., \enquote{Maps of Dust Infrared
 \bibitem[{{Scoville} et~al.(2007)}]{COSMOS_2007}
 {Scoville}, N. et~al., \enquote{{The Cosmic Evolution Survey (COSMOS): Overview}}, \emph{\apjs}, vol. 172, no.~1, pp. 1--8, 2007. \eprint{astro-ph/0612305}, \urlprefix\url{http://dx.doi.org/10.1086/516585}.
 
-\bibitem[{Seth et~al.(2014)}]{Seth_2014}
-Seth, A.~C. et~al., \enquote{A supermassive black hole in an ultra-compact dwarf galaxy}, \emph{Nature}, vol. 513, no. 7518, p. 398–400, 2014, ISSN 1476-4687. \urlprefix\url{http://dx.doi.org/10.1038/nature13762}.
-
-\bibitem[{{Shankar} et~al.(2016)}]{Shankar_2016}
-{Shankar}, F. et~al., \enquote{{Selection bias in dynamically measured supermassive black hole samples: its consequences and the quest for the most fundamental relation}}, \emph{\mnras}, vol. 460, no.~3, pp. 3119--3142, 2016. \eprint{1603.01276}, \urlprefix\url{http://dx.doi.org/10.1093/mnras/stw678}.
-
 \bibitem[{{Spengler} et~al.(2017)}]{Spengler_2017}
 {Spengler}, C. et~al., \enquote{{Virgo Redux: The Masses and Stellar Content of Nuclei in Early-type Galaxies from Multiband Photometry and Spectroscopy}}, \emph{\apj}, vol. 849, no.~1, 55, 2017. \eprint{1709.00406}, \urlprefix\url{http://dx.doi.org/10.3847/1538-4357/aa8a78}.
-
-\bibitem[{Springel et~al.(2005)Springel, Di~Matteo and Hernquist}]{Springel_2005}
-Springel, V., Di~Matteo, T. and Hernquist, L., \enquote{Modelling feedback from stars and black holes in galaxy mergers}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 361, no.~3, p. 776–794, 2005, ISSN 1365-2966. \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2005.09238.x}.
 
 \bibitem[{Strader et~al.(2013)}]{Strader_2013}
 Strader, J. et~al., \enquote{THE DENSEST GALAXY}, \emph{The Astrophysical Journal}, vol. 775, no.~1, p.~L6, 2013, ISSN 2041-8213. \urlprefix\url{http://dx.doi.org/10.1088/2041-8205/775/1/l6}.
@@ -413,17 +434,20 @@ Vogelsberger, M. et~al., \enquote{Introducing the Illustris Project: simulating 
 \bibitem[{Wang et~al.(2023)}]{Wang_2023}
 Wang, K. et~al., \enquote{An evolutionary continuum from nucleated dwarf galaxies to star clusters}, \emph{Nature}, vol. 623, no. 7986, p. 296–300, 2023, ISSN 1476-4687. \urlprefix\url{http://dx.doi.org/10.1038/s41586-023-06650-z}.
 
+\bibitem[{Watts and Bekki(2016)}]{Watts_2016}
+Watts, A. and Bekki, K., \enquote{Formation and Evolution of Blue Compact Dwarfs: The Origin of Their Steep Rotation Curves}, \emph{Monthly Notices of the Royal Astronomical Society}, vol. 462, no.~3, pp. 3314--3324, 2016, ISSN 1365-2966. \urlprefix\url{http://dx.doi.org/10.1093/mnras/stw1812}.
+
 \bibitem[{{Wehner} and {Harris}(2006)}]{Wehner_2006}
 {Wehner}, E.~H. and {Harris}, W.~E., \enquote{{From Supermassive Black Holes to Dwarf Elliptical Nuclei: A Mass Continuum}}, \emph{\apjl}, vol. 644, no.~1, pp. L17--L20, 2006. \eprint{astro-ph/0603801}, \urlprefix\url{http://dx.doi.org/10.1086/505387}.
 
 \bibitem[{{Wehner} and {Harris}(2007)}]{Wehner_Harris_2007}
 {Wehner}, E. M.~H. and {Harris}, W.~E., \enquote{{Ultracompact Dwarf Candidates in the Hydra Cluster}}, \emph{\apjl}, vol. 668, no.~1, pp. L35--L38, 2007. \eprint{0708.1514}, \urlprefix\url{http://dx.doi.org/10.1086/522305}.
 
-\bibitem[{{Weinmann} et~al.(2012)}]{Weinmann_2012}
-{Weinmann}, S.~M. et~al., \enquote{{A fundamental problem in our understanding of low-mass galaxy evolution}}, \emph{\mnras}, vol. 426, no.~4, pp. 2797--2812, 2012. \eprint{1204.4184}, \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2012.21931.x}.
-
 \bibitem[{Wise(2019)}]{Wise_2019}
 Wise, J.~H., \enquote{Cosmic reionisation}, \emph{Contemporary Physics}, vol.~60, no.~2, p. 145–163, 2019, ISSN 1366-5812. \urlprefix\url{http://dx.doi.org/10.1080/00107514.2019.1631548}.
+
+\bibitem[{Yin et~al.(2011)Yin, Matteucci and Vladilo}]{Yin_2011}
+Yin, J., Matteucci, F. and Vladilo, G., \enquote{Chemical Evolution of Dwarf Irregular and Blue Compact Galaxies}, \emph{Astronomy \& Astrophysics}, vol. 531, p. A136, 2011, ISSN 1432-0746. \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201015022}.
 
 \bibitem[{{York} et~al.(2000)}]{SDSS_2000}
 {York}, D.~G. et~al., \enquote{{The Sloan Digital Sky Survey: Technical Summary}}, \emph{\aj}, vol. 120, no.~3, pp. 1579--1587, 2000. \eprint{astro-ph/0006396}, \urlprefix\url{http://dx.doi.org/10.1086/301513}.
