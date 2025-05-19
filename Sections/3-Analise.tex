@@ -1,4 +1,4 @@
-\chapter{\chapternameanalysis}\label{analise}
+\chapter{\chapternameanalysis}\label{cap:analise}
 Neste capítulo, apresentamos a análise das galáxias ultracompactas (UCDs) no aglomerado de Fornax, com foco nas propriedades das UCDs conhecidas e na seleção de novas candidatas. Inicialmente, discutimos as características das UCDs previamente identificadas e sua distribuição espacial. Em seguida, exploramos a relação entre as UCDs e as galáxias massivas do aglomerado. Também detalhamos o uso de \ac{ML} para classificar objetos compactos e extensos, além de calcular \ac{photoz} para refinar a seleção de candidatas. Por fim, apresentamos a amostra final de candidatas a UCDs e realizamos uma análise comparativa com as UCDs conhecidas e galáxias morfologicamente classificadas.
 
 \section{UCDs em Fornax}\label{sec:ucds_fornax}
@@ -97,7 +97,7 @@ Na Figura \ref{distribuicao_fwhm_image_r_r_aper6_ucds_fornax}, mostramos a distr
 
 Usando o compilado de \ac{specz} de \cite{Lima_2024}, mostramos na Tabela \ref{tab:ucds_know_z_gmag} os valores para esses objetos catalogados como UCDs em nossos dados, vindo de \cite{catalog_ucds}, juntamente da magnitude $g$ na abertura $APER\_6$ de referência. Apresentamos também os valores de redshift fotométrico (\textit{zml}) de \citep{erik_photoz_2024}. 
 
-Esses valores foram obtidos a partir da fotometria padrão do S-PLUS. Assim, parte das UCDs não possui valores de redshift fotométrico, pois algumas estão presentes apenas com a redução da fotometria do RUN 1. Os valores de \textit{zml} são superiores aos valores de \textit{specz}, refletindo o problema de que, para a amostra de objetos com redshifts fotométricos, temos muito menos dados em redshifts próximos. Assim, os classificadores tendem a superestimar os valores. Ainda assim, eles são úteis para avaliar os objetos de fundo. Detalhamos mais sobre a utilização deles na seção \ref{sec:zphot}.
+Esses valores foram obtidos a partir da fotometria padrão do S-PLUS. Assim, parte das UCDs não possui valores de redshift fotométrico, pois algumas estão presentes apenas com a redução da fotometria do RUN 1. Os valores de \textit{zml} são superiores aos valores de \textit{specz}, refletindo o problema de que, para a amostra de objetos com redshifts fotométricos, temos muito menos dados em redshifts próximos. Assim, os estimadores tendem a superestimar os valores. Ainda assim, eles são úteis para avaliar os objetos de fundo. Detalhamos mais sobre a utilização deles na seção \ref{sec:zphot}.
 
 \begin{table}[!ht]
     \centering
@@ -127,7 +127,7 @@ Esses valores foram obtidos a partir da fotometria padrão do S-PLUS. Assim, par
     \label{tab:ucds_know_z_gmag}
 \end{table}
 
-Conforme definido na seção \ref{subsec:cuts}, consideraremos como UCDs os objetos com magnitudes $g$ menores que 21. Assim, da Tabela \ref{tab:ucds_know_z_gmag}, iremos remover os objetos mais fracos que 21.
+Conforme definido na seção \ref{subsec:cuts}, consideraremos como UCDs os objetos compactos com magnitudes $g$ menores que 21. Assim, da Tabela \ref{tab:ucds_know_z_gmag}, iremos remover os objetos mais fracos que 21.
 
 \subsection{Distribuição relativa ao centro de Fornax}
 Na Figura \ref{distribuicao_ucds_center}, apresentamos a distribuição de UCDs, com respeito ao centro do aglomerado, onde temos a galáxia NGC 1399, que é a galáxia mais massiva do aglomerado de Fornax.
@@ -537,13 +537,6 @@ A probabilidade dos objetos serem da classe 1 (objetos extensos) para as UCDs co
 
 Das 13 UCDs presentes, 9 foram classificadas com uma predição acima de 70\%, e 2 com classificação muito pouco provável. 
 
-% \subsection*{Previsões para aglomerados globulares}\label{subsec:predicoes_gc}
-
-
-% Como mencionado neste trabalho, parte das UCDs estudadas possivelmente têm sua formação associada a aglomerados globulares (Globular Clusters, GCs). A classificação adotada para distinguir UCDs de GCs, conforme descrito na seção \ref{subsec:cuts}, considera objetos com \textit{g}$\leq$21 como UCDs e aqueles com \textit{g}$>$21 como GCs.
-
-% Para o classificador RF, podemos obejtsar o seu comportamento e classiicação para GCs na nossa amostra. Para Uma lsita de GCs em Fornax, usmaos os dados vindo de \cite{Saifollahi_2021}, que apresenta uma lista de GCs/UCDs conhecidas na região de Fornax. Removemos 
-
 \section{Redshifts fotométricos}\label{sec:zphot}
 
 A determinação de redshifts é uma etapa importante para identificar a localização dos objetos no universo. Nesse trabalho, os \ac{photoz} (\textit{$z_{phot}$}) permitem que estimemos a distância dos objetos de forma eficiente e em larga escala, utilizando apenas dados fotométricos. Essa abordagem é especialmente útil quando não há disponibilidade de redshifts espectroscópicos (\textit{$z_{spec}$}). A utilização de redshifts fotométricos têm o objetivo de filtrar objetos que não pertencem ao aglomerado de Fornax, reduzindo a contaminação por objetos de fundo.
@@ -793,10 +786,7 @@ Apresentamos na Figura \ref{ucds_candidates_final_imagens} as imagens dos 14 obj
 
 
 \section{Análise das candidatas}\label{sec:analise_candidatas}
-Selecionamos 14 objetos para a amostra final de candidatas a UCDs da seção \ref{sec:selecao_candidatas}.
-%  mais 4 objetos com possíveis sinais de emissão da subseção \ref{subsec: candidatas_emissao}, totalizando 21 objetos.
-
-Utilizando o catálogo de Fornax proveniente do projeto S-PLUS Fornax \citep{castelli2024splusfornaxprojectsfp}, com a fotometria apresentada por \citep{haack2024splusfornaxprojectsfp}, obtivemos uma amostra de galáxias conhecidas, classificadas morfologicamente. Com base nisso, realizamos uma análise das candidatas selecionadas, comparando-as com as galáxias conhecidas. Identificamos, em diversos conjuntos de parâmetros, tanto a localização das UCDs reais quanto a posição das nossas candidatas.
+Selecionamos 14 objetos para a amostra final de candidatas a UCDs da seção \ref{sec:selecao_candidatas}. Utilizando o catálogo de Fornax proveniente do projeto S-PLUS Fornax \citep{castelli2024splusfornaxprojectsfp}, com a fotometria apresentada por \citep{haack2024splusfornaxprojectsfp}, obtivemos uma amostra de galáxias conhecidas, classificadas morfologicamente. Com base nisso, realizamos uma análise das candidatas selecionadas, comparando-as com as galáxias conhecidas. Identificamos, em diversos conjuntos de parâmetros, tanto a localização das UCDs reais quanto a posição das nossas candidatas.
 
 Selecionamos as categorias morfológicas de galáxias mais relevantes com as maiores quantidades de objetos para comparação. Dentre elas, temos as galáxias anãs elípticas, nucleadas e não nucleadas, junto das irregulares. Outros tipos importantes incluem as LSB (Low Surface Brightness) e as galáxias espirais.
 
@@ -808,6 +798,8 @@ Utilizamos o parâmetro \textit{PETRO\_RADIUS}, fornecido pelo SExtractor, que e
     \mu_{\text{medio}} = \text{mag\_aparente} + 2.5 \times \log_{10}(\pi \times A \times B \times 0.55^2 \times \text{PETRO\_RADIUS}^2)
     \label{equation_sb}
 \end{equation}
+
+As comparações das candidatas com as galáxias conhecidas são feitas com as magnitudes aparentes na abertura \textit{AUTO}, para caracterizar a magnitude total dos objetos, com uma abertura adaptativa, útil principalmente para essas galáxias mais extensas.
 
 Na Figura \ref{sb_r_ucds_galaxias}, mostramos a distribuição do brilho superficial médio na banda $r$ para as UCDs conhecidas e as galáxias morfologicamente classificadas, juntamente com as candidatas selecionadas.
 
@@ -825,24 +817,24 @@ Tanto para os cenários previstos de formação das UCDs como núcleos expostos 
 
 Nesse tipo de diagrama, quando comparado com as galáxias de morfologia “convencional” (elípticas, espirais, etc.), essa diferença estrutural dos dois tipos é evidenciada: as UCDs ocupam uma região “compacta e luminosa” para seu tamanho, enquanto as galáxias seguem uma correlação mais “espalhada” entre luminosidade e tamanho/brilho superficial.
 
-Na Figura \ref{r_aper_6_mu_max} e \ref{r_aper_6_kron_radius}, temos os parâmetros \textit{MU\_MAX} e \textit{KRON\_RADIUS}, respectivamente, ambos em função da magnitude aparente na banda $r$. O \textit{MU\_MAX} representa o pico de brilho superficial do objeto, indicando o quão brilhante é a região central do objeto em comparação com o fundo. Já o \textit{KRON\_RADIUS} (raio de Kron) é um raio adaptativo calculado pelo SExtractor a partir da média ponderada da distância dos pixels ao centro do objeto, com base na distribuição de luz.
+Na Figura \ref{r_auto_mu_max} e \ref{r_auto_kron_radius}, temos os parâmetros \textit{MU\_MAX} e \textit{KRON\_RADIUS}, respectivamente, ambos em função da magnitude aparente na banda $r$. O \textit{MU\_MAX} representa o pico de brilho superficial do objeto, indicando o quão brilhante é a região central do objeto em comparação com o fundo. Já o \textit{KRON\_RADIUS} (raio de Kron) é um raio adaptativo calculado pelo SExtractor a partir da média ponderada da distância dos pixels ao centro do objeto, com base na distribuição de luz.
 
-Em ambas as figuras, observamos que as candidatas se localizam em regiões mais próximas das UCDs conhecidas do que das demais galáxias com morfologia apresentada. Na Figura \ref{r_aper_6_mu_max}, vemos que elas seguem uma segunda curva abaixo das galáxias mais extensas. Já para a Figura \ref{r_aper_6_kron_radius}, vemos que, conforme os objetos ficam mais fracos, o raio de Kron aumenta. Quando um objeto é mais extenso ou tem a luz distribuída de forma difusa, a ferramenta precisa usar um raio maior para abranger boa parte do fluxo total. Em outras palavras, objetos mais fracos (mas espalhados em área maior) resultam em um Kron Radius maior, pois o algoritmo “enxerga” a luz se estendendo além de um núcleo compacto. Já objetos brilhantes e concentrados apresentam Kron Radius menor, pois a maior parte do fluxo está contida numa região pequena. Ainda assim, notamos que as candidatas selecionadas e UCDs conhecidas têm a mesma tendência, porém agrupadas em uma região mais abaixo do gráfico.
+Em ambas as figuras, observamos que as candidatas se localizam em regiões mais próximas das UCDs conhecidas do que das demais galáxias com morfologia apresentada. Na Figura \ref{r_auto_mu_max}, vemos que elas seguem uma segunda curva abaixo das galáxias mais extensas. Já para a Figura \ref{r_auto_kron_radius}, vemos que, conforme os objetos ficam mais fracos, o raio de Kron diminui. Notamos que as candidatas selecionadas e UCDs conhecidas têm a mesma tendência, porém agrupadas em uma região mais abaixo no gráfico.
 
 \begin{figure}[!ht]
     \begin{center}
-    \includegraphics[width=1.\columnwidth,angle=0]{r_aper_6_mu_max.png}
+    \includegraphics[width=1.\columnwidth,angle=0]{r_auto_mu_max.png}
     \caption[]{Parâmetro \textit{MU\_MAX} em função da magnitude aparente na banda $r$ para as UCDs conhecidas, as galáxias morfologicamente classificadas e as candidatas selecionadas.}
-    \label{r_aper_6_mu_max}
+    \label{r_auto_mu_max}
     \end{center}
 \end{figure}
 
 
 \begin{figure}[!ht]
     \begin{center}
-    \includegraphics[width=1.\columnwidth,angle=0]{r_aper_6_kron_radius.png}
+    \includegraphics[width=1.\columnwidth,angle=0]{r_auto_kron_radius.png}
     \caption[]{Parâmetro \textit{KRON\_RADIUS} em função da magnitude aparente na banda $r$ para as UCDs conhecidas, as galáxias morfologicamente classificadas e as candidatas selecionadas.}
-    \label{r_aper_6_kron_radius}
+    \label{r_auto_kron_radius}
     \end{center}
 \end{figure}
 
@@ -860,11 +852,11 @@ Mostramos na Figura \ref{distribuicao_candidatas_radec} a distribuição em coor
 
 A Figura \ref{distribuicao_candidatas_radec} apresenta o principal resultado da nossa seleção e busca por candidatas a UCDs no aglomerado de Fornax. Observando as imagens das candidatas na Figura \ref{ucds_candidates_final_imagens}, notamos que elas possuem uma aparência mais pontual, como esperado para objetos compactos. Essas candidatas representam uma seleção de objetos que exibem características morfológicas e fotométricas consistentes com as UCDs conhecidas.
 
-Elas foram selecionadas com base em múltiplos critérios: possuem larguras à meia altura (\textit{FWHM}) compatíveis com objetos compactos, altas probabilidades de serem extensos segundo o modelo de aprendizado de máquina, redshifts fotométricos que indicam baixa probabilidade de serem objetos de fundo muito distantes do aglomerado, e magnitudes dentro do intervalo esperado para UCDs. Além disso, as análises das distribuições de parâmetros, como o brilho superficial médio (Figura \ref{sb_r_ucds_galaxias}), o pico de brilho superficial (\textit{MU\_MAX}, Figura \ref{r_aper_6_mu_max}) e o raio de Kron (\textit{KRON\_RADIUS}, Figura \ref{r_aper_6_kron_radius}), mostram que essas candidatas ocupam as mesmas regiões que as UCDs conhecidas, reforçando sua similaridade estrutural e fotométrica.
+Elas foram selecionadas com base em múltiplos critérios: possuem larguras à meia altura (\textit{FWHM}) compatíveis com objetos compactos, altas probabilidades de serem extensos segundo o modelo de aprendizado de máquina, redshifts fotométricos que indicam baixa probabilidade de serem objetos de fundo muito distantes do aglomerado, e magnitudes dentro do intervalo esperado para UCDs. Além disso, as análises das distribuições de parâmetros, como o brilho superficial médio (Figura \ref{sb_r_ucds_galaxias}), o pico de brilho superficial (\textit{MU\_MAX}, Figura \ref{r_auto_mu_max}) e o raio de Kron (\textit{KRON\_RADIUS}, Figura \ref{r_auto_kron_radius}), mostram que essas candidatas ocupam as mesmas regiões que as UCDs conhecidas, reforçando sua similaridade estrutural e fotométrica.
 
-Esses resultados indicam que as candidatas selecionadas são os objetos mais promissores para estudos espectroscópicos futuros, com uma combinação de critérios morfológicos, fotométricos e probabilísticos aplicada neste trabalho.
+Esses resultados indicam que as candidatas selecionadas são objetos promissores para estudos espectroscópicos futuros, com combinação de critérios morfológicos, fotométricos e probabilísticos aplicada neste trabalho.
 
-Na Figura \ref{distribuicao_candidatas_radec}, observamos que, das 14 candidatas, apenas uma está localizada dentro do raio de virial do aglomerado, enquanto as demais estão distribuídas em regiões mais externas, especialmente nas coordenadas mais à direita da imagem.
+Na Figura \ref{distribuicao_candidatas_radec}, observamos que, das 14 candidatas, apenas uma está localizada dentro do raio de virial do aglomerado, enquanto as demais estão distribuídas em regiões mais externas, especialmente nas coordenadas de RA maior que a de Fornax, talvez associados a algum filamento.
 
 As UCDs conhecidas até o momento são predominantemente encontradas em regiões centrais de aglomerados de galáxias. Essa concentração nas áreas mais densas pode ser explicada pelo viés observacional, uma vez que estudos espectroscópicos intensivos geralmente se concentram nas regiões centrais dos aglomerados, onde a densidade de galáxias é maior. Esse viés justifica a ausência de UCDs conhecidas em regiões mais externas do aglomerado de Fornax.
 
@@ -874,8 +866,11 @@ Modelos baseados em interações gravitacionais intensas, como o stripping de ga
 
 Entretanto, a distribuição periférica das candidatas identificadas neste trabalho também é compatível com cenários de formação que não exigem necessariamente a presença de um ambiente denso como o núcleo de um aglomerado. Entre esses mecanismos alternativos estão a fusão de superaglomerados estelares formados \textit{in situ} em regiões de menor densidade \citep{Mieske_2011}, bem como o colapso direto de nuvens de gás primordial, que pode originar núcleos compactos e massivos \citep{Drinkwater_2003}. Esses processos são particularmente plausíveis em subestruturas em \textit{infall} ou em halos galácticos pouco perturbados, o que se alinha com a localização observada das candidatas.
 
-Embora \citet{Bekki_2001} tenham mostrado que o stripping de galáxias anãs nucleadas tende a produzir UCDs concentradas nos centros de aglomerados, modelos mais recentes (e.g., \citealt{Br_ns_2011}; \citealt{Mieske_2011}; \citealt{Pfeffer_2016}) preveem populações mais distribuídas espacialmente, incluindo objetos em regiões periféricas. Assim, nossos resultados fortalecem a hipótese de que múltiplos canais de formação, refletindo a diversidade morfológica, dinâmica e espacial das UCDs. Caso a presença de UCDs se estenda de fato para regiões além do raio de virial, isso reforça a necessidade de incluir modos de crescimento contínuo e eventos de \textit{infall} tardio nos modelos semianalíticos de formação de galáxias (SAMs), conforme sugerido por \citet{Pfeffer_2016}.
+Embora \citet{Bekki_2001} tenham mostrado que o stripping de galáxias anãs nucleadas tende a produzir UCDs concentradas nos centros de aglomerados, modelos mais recentes (e.g., \citealt{Br_ns_2011}; \citealt{Mieske_2011}; \citealt{Pfeffer_2016}) preveem populações mais distribuídas espacialmente, incluindo objetos em regiões periféricas. Assim, nossos resultados fortalecem a hipótese de múltiplos canais de formação, refletindo a diversidade morfológica, dinâmica e espacial das UCDs. Caso a presença de UCDs se estenda de fato para regiões além do raio de virial, isso reforça a necessidade de incluir modos de crescimento contínuo e eventos de \textit{infall} tardio nos modelos semianalíticos de formação de galáxias (SAMs), conforme sugerido por \citet{Pfeffer_2016}.
 
-Assim, a descoberta de candidatas a UCDs fora do raio de virial de Fornax não só ampliaria significativamente a população conhecida, mas também nos obrigaria a repensar os processos de formação e evolução dessas galáxias compactas, explorando ativamente ambientes de baixa densidade e ampliando nosso entendimento sobre a distribuição espacial e os mecanismos de formação das UCDs.
+A descoberta de candidatas a UCDs fora do raio de virial de Fornax não só ampliaria significativamente a população conhecida, mas também nos obrigaria a repensar os processos de formação e evolução dessas galáxias compactas, explorando ativamente ambientes de baixa densidade e ampliando nosso entendimento sobre a distribuição espacial e os mecanismos de formação das UCDs.
 
+Analisamos uma lista de candidatas que foram selecionadas durante um projeto de iniciação científica anterior. A análise dos espectros foi realizada no início deste projeto de mestrado, e descrevemos os dados, a redução e os resultados no Apêndice \ref{chap:spectra}. Dentre elas, 9 foram classificadas como estrelas, 1 como quasar e 5 como galáxias de fundo, nenhuma sendo uma galáxia compacta de Fornax. 
+
+Já lista de novas candidatas a UCDs selecionadas neste trabalho, considerando que o projeto de mestrado será concluído no primeiro semestre de 2025 e que o aglomerado de Fornax é visível no Gemini Sul durante o segundo semestre, o pedido de tempo para observação dessas novas candidatas será submetido e analisado posteriormente no projeto de doutorado.
 

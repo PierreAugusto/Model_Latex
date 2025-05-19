@@ -1,6 +1,6 @@
-\chapter{\chapternamedatabase}\label{database}
+\chapter{\chapternamedatabase}\label{cap:database}
 
-Neste capítulo, apresentamos os dados utilizados neste trabalho, incluindo as fontes de dados fotométricos. O dados espectroscópicos serão apresentados e discutidos no capítulo 4. 
+Neste capítulo, apresentamos os dados utilizados neste trabalho, incluindo as fontes de dados fotométricos. Os dados espectroscópicos serão apresentados e discutidos no apêndice \ref{chap:spectra} e no capítulo \ref{chap:spectra_emission}. 
 
 Primeiramente, descrevemos o levantamento \ac{splus}, suas características e os dados obtidos. Em seguida, detalhamos os procedimentos de correção de extinção aplicados às magnitudes fotométricas. Apresentamos também como os dados foram selecionados para a análise, incluindo os parâmetros utilizados para a fotometria e a seleção de galáxias, magnitudes limites e flags de qualidade.
 
@@ -22,7 +22,7 @@ Os dados utilizados neste trabalho foram obtidos a partir do quarto lançamento 
     \begin{center}
     % \setcaptionmargin{1cm}
     \includegraphics[width=1.0 \columnwidth,angle=0]{footprint_iDR4.png}
-    \caption[]{Área coberta pelo S-PLUS DR4. Campos em azul são os obervadados até o DR4.}
+    \caption[]{Área coberta pelo S-PLUS DR4. Campos em azul são os obervados até o DR4.}
     \label{footprint_iDR4}
     \end{center}
 \end{figure}
@@ -43,7 +43,7 @@ Para este trabalho, escolhemos utilizar as magnitudes baseadas na abertura APER\
 \subsection{Fotometria de Fornax}\label{sec:Fornax_data}
 Os dados do aglomerado de Fornax foram obtidos a partir da mesma fonte que os dados do S-PLUS, o DR4. Porém, a partir da colaboração descrita em \cite{castelli2024splusfornaxprojectsfp}, utilizamos a fotometria de \cite{haack2024splusfornaxprojectsfp}, onde foram realizadas novas execuções específicas do \ac{SExtractor} (SExtractor) no DR4, identificando o conjunto mais adequado de parâmetros para recuperar o máximo possível de galáxias de Fornax com fotometria confiável e evitando duplicações.
 
-Os parâmetros da RUN 1 de \cite{haack2024splusfornaxprojectsfp} foram projetados para identificar galáxias fracas e objetos compactos próximos a galáxias mais brilhantes. Por outro lado, os parâmetros da RUN 2 são voltados para uma boa caracterização de galáxias brilhantes e extensas. Assim, para detectar objetos compactos como anãs ultra-compactas (UCDs) ou aglomerados globulares (GCs) perto das galáxias de Fornax, os parâmetros da RUN 1 são mais adequados. Já para caracterizar melhor os objetos mais brilhantes e extensos em Fornax, os parâmetros da RUN 2 são mais eficazes. No nosso caso, usamos os dados da RUN 1. Assim, todos as magnitudes e parâmetros dos \ac{SExtractor} que usamos ao longo do trabalho são de RUN 1 do \cite{haack2024splusfornaxprojectsfp}.
+Os parâmetros da RUN 1 de \cite{haack2024splusfornaxprojectsfp} foram projetados para identificar galáxias fracas e objetos compactos próximos a galáxias mais brilhantes. Por outro lado, os parâmetros da RUN 2 são voltados para uma boa caracterização de galáxias brilhantes e extensas. Assim, para detectar objetos compactos como anãs ultra-compactas (UCDs) ou aglomerados globulares (GCs) perto das galáxias de Fornax, os parâmetros da RUN 1 são mais adequados. Já para caracterizar melhor os objetos mais brilhantes e extensos em Fornax, os parâmetros da RUN 2 são mais eficazes. No nosso caso, usamos os dados da RUN 1. Assim, todos as magnitudes e parâmetros dos \ac{SExtractor} que usamos ao longo do trabalho são da RUN 1 de \cite{haack2024splusfornaxprojectsfp}.
 
 
 \subsection{Correção da extinção}\label{sec:Coeficientes_ext}
@@ -62,7 +62,7 @@ O cálculo dos coeficientes de extinção foi realizado utilizando o pacote Pyth
 \subsection{Cortes de qualidade na fotometria}\label{subsec:cuts}
 Para garantir a qualidade dos dados fotométricos utilizados neste trabalho, aplicamos uma série de cortes de qualidade nas magnitudes. Esses cortes foram definidos com base em parâmetros específicos fornecidos pelo S-PLUS DR4 dos dados de Fornax, utilizando os parâmetros da RUN 1 de \cite{haack2024splusfornaxprojectsfp}.
 
-Descartamos nas 12 magnitudes da abertura APER\_6 magnitudes maiores do que 30, evitando objetos com baixa qualidade de medição e com erros fotométricos altos. Descartamos também em cada uma das mesmas bandas valores de \textit{flag0}$\leq$3, que são objetos com problemas de qualidade de medição.
+Descartamos, nas 12 magnitudes da abertura APER\_6, magnitudes maiores do que 30, evitando objetos com baixa qualidade de medição e com erros fotométricos altos. Descartamos também em cada uma das mesmas bandas valores de \textit{flag0}$\leq$3, que são objetos com problemas de qualidade de medição.
 
 Na seleção dos objetos utilizados nas próximas seções para a busca de galáxias ultracompactas, adotamos a banda \textit{g\_APER\_6} como referência principal. Aplicamos um corte inferior em \textit{g\_APER\_6}=13 para excluir objetos muito brilhantes e saturados, garantindo a qualidade das medições. Além disso, estabelecemos um corte superior em \textit{g\_APER\_6}=21, visando minimizar a contaminação por aglomerados globulares. Esses critérios de seleção seguem \cite{Cantiello_2020}, que adotam um critério de separação de GCs de UCDs com $M_g=-10.5$, que corresponde a $M_v\sim -11$ mag ($\sim10^7 M_\odot$) e uma magnitude aparente de $m_g=21$. O módulo de distância adotado para Fornax é de $m-M=31.5$, apresentado na Tabela \ref{tab:properties_fornax}.
 
