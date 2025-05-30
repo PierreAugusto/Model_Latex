@@ -435,6 +435,7 @@ A Tabela \ref{metricas_modelo_knn} mostra as métricas obtidas no conjunto de te
         0 & 0.92 & 0.88 & 0.90 \\
         1 & 0.86 & 0.91 & 0.88 \\
         \midrule
+        \multicolumn{3}{l}{Acurácia} & 0.89 \\
         \multicolumn{3}{l}{AUC-ROC} & 0.95 \\
         \multicolumn{3}{l}{Coeficiente de Correlação de Matthews (MCC)} & 0.78 \\
         \bottomrule
@@ -453,6 +454,7 @@ A Tabela \ref{metricas_modelo_knn} mostra as métricas obtidas no conjunto de te
         0 & 0.95 & 0.90 & 0.92 \\
         1 & 0.89 & 0.94 & 0.91 \\
         \midrule
+        \multicolumn{3}{l}{Acurácia} & 0.92 \\
         \multicolumn{3}{l}{AUC-ROC} & 0.97 \\
         \multicolumn{3}{l}{Coeficiente de Correlação de Matthews (MCC)} & 0.84 \\
         \bottomrule
@@ -481,7 +483,7 @@ Pelos resultados das métricas adotadas, e também pela matrizes de confusão, p
 
 Muitos dos objetos tiveram classificação correta, como podemos ver na diagonal principal das matrizes de confusão da Figura \ref{confusion_matrix}. Porém, cabe ressaltar que nem todos os objetos do conjunto de teste eram estrelas ou galáxias, mas sim, majoritariamente, mais de cada um deles nas classes de compactos e extensos, respectivamente. Assim, é esperado que algumas classificações sejam feitas de forma errada, e é nessa proposta que o modelo foi treinado: encontrar aqueles com maior probabilidade de serem extensos, mas que fazem parte do conjunto dos compactos.
 
-Os resultados obtidos pelo RF têm valores de precisão, completeza e F1-score acima de 0,89 para ambas as classes. A AUC-ROC de 0,97 indica que o modelo é capaz de distinguir entre as duas classes com boa precisão, dadas as limitações dos conjuntos de treinamento. O coeficiente de correlação de Matthews (MCC) de 0,84 é um indicativo de que o modelo é capaz de prever corretamente a maioria dos objetos.
+Os resultados obtidos pelo RF têm valores de precisão, completeza e F1-score acima de 0,89 para ambas as classes. A acurácia de 0,92 indica que o modelo é capaz de classificar corretamente a maioria dos objetos. A AUC-ROC de 0,97 indica que o modelo é capaz de distinguir entre as duas classes com boa precisão, dadas as limitações dos conjuntos de treinamento. O coeficiente de correlação de Matthews (MCC) de 0,84 é um indicativo de que o modelo é capaz de prever corretamente a maioria dos objetos.
 
 Foram realizadas as previsões de probabilidade de ser da classe 1 (objetos extensos) para toda a amostra que estaremos analisando na busca (amostra de treino e amostra de teste). A Figura \ref{probabilidade_extensos_fwhm} mostra, para o KNN, a distribuição de \textit{FWHM} na banda \textit{r} dos objetos com classificação como estrela ou galáxia do GAIA DR3 com probabilidade maior que 90\%. Sobreposta na imagem, temos matrizes de confusão do classificador para diferentes intervalos de \textit{FWHM}.
 
